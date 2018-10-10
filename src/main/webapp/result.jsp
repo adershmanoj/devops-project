@@ -8,7 +8,7 @@
 </head>
 <body>
 	<% 
-	out.println("The sum is: "+ request.getAttribute("sum"));
+	out.println("Result: "+ request.getAttribute("sum"));
 	%>
 </body>
 </html>

@@ -2,18 +2,27 @@
 <head>
 <title>Devops Project</title>
 <style>
-	form {
-		display: flex;
-		flex-direction: column;
-	}
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+.form-container {
+	width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
 </style>
 </head>
 
 <body>
-	<form method="post" action="AddNumbers">
-		First number: <input type="text" name="num1" /> Second number: <input
-			type="text" name="num2" /> <input type="submit" value="SUBMIT" />
-	</form>
+	<div class='form-container'>
+		<form method="post" action="AddNumbers">
+			First number: <input type="text" name="num1" /> Second number: <input
+				type="text" name="num2" /> <input type="submit" value="SUBMIT" />
+		</form>
+	</div>
 </body>
 
 </html>
