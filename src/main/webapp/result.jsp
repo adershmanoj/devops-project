@@ -10,5 +10,7 @@
 	<% 
 	out.println("Result: "+ request.getAttribute("sum"));
 	%>
+	<br>
+	<a href="index.html">back</a>
 </body>
 </html>

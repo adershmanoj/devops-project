@@ -10,5 +10,6 @@ public class AddNumbersTest extends TestCase {
 	AddNumbersServlet addNumbersServlet = new AddNumbersServlet();
 	double result = addNumbersServlet.addNumbers(5, 10);
 	assertEquals(15.0, result);
+	System.out.println("Success");
     }
 }
