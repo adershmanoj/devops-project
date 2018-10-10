@@ -11,13 +11,16 @@ import java.util.List;
 
 @WebServlet(name = "addnumbersservlet", urlPatterns = "/AddNumbers")
 public class AddNumbersServlet extends HttpServlet {
-
+	public double addNumbers(double num1, double num2) {
+		double sum = num1 + num2;
+		return sum;
+	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		try {
 			double num1 = Double.parseDouble(req.getParameter("num1"));
 			double num2 = Double.parseDouble(req.getParameter("num2"));
-			double sum = num1 + num2;
+			double sum = addNumbers(num1, num2);
 			req.setAttribute("sum", sum);
 		} catch (NumberFormatException e) {
 			String result = "Invalid input, please enter a number";
